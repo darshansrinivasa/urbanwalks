@@ -11,6 +11,9 @@
   "markets": {
     "india": {
       "parent": "@default"
+    },
+    "canada": {
+      "parent": "@default"
     }
   }
 }
