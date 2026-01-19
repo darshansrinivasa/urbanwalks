@@ -19,7 +19,6 @@
 <style>
   header-drawer {
     justify-self: start;
-    margin-left: -1.2rem;
   }
 
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
@@ -49,6 +48,7 @@
   .list-menu--inline {
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   summary.list-menu__item {
@@ -78,12 +78,13 @@
 
 {%- style -%}
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 1.5rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 1.5rem;
   }
 
   .section-header {
     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    top: 0;
   }
 
   @media screen and (min-width: 750px) {
@@ -96,6 +97,10 @@
     .header {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    .section-header {
+      top: 48px;
     }
   }
 {%- endstyle -%}

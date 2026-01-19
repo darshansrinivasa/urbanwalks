@@ -489,6 +489,9 @@
             },
             "link": {
               "label": "Link"
+            },
+            "discount_code": {
+              "label": "Discount code"
             }
           }
         }
