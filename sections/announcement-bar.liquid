@@ -18,8 +18,26 @@
   {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
+{%  style  %} 
+  {% if section.settings.sticky_announcement_bar %}
+    @media screen and (min-width: 990px) {
+    .announcement-bar-section {
+      position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+    }
+  {% endif %}
+
+  @media screen and (max-width: 989px) {
+    .announcement-bar-section .slider-button {
+      display: none;
+    }
+  }
+{% endstyle %}
+
 <div
-  class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %}"
+  class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %}  "
 >
   <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
     {%- if section.settings.show_social and social_icons -%}
@@ -32,23 +50,24 @@
         aria-label="{{ 'sections.header.announcement' | t }}"
         {{ section.blocks.first.shopify_attributes }}
       >
-        {%- if section.blocks.first.settings.text != blank -%}
-          {%- if section.blocks.first.settings.link != blank -%}
-            <a
-              href="{{ section.blocks.first.settings.link }}"
-              class="announcement-bar__link link link--text focus-inset animate-arrow"
-            >
-          {%- endif -%}
-          <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
-            {%- if section.blocks.first.settings.link != blank -%}
-              {{- 'icon-arrow.svg' | inline_asset_content -}}
-            {%- endif -%}
-          </p>
-          {%- if section.blocks.first.settings.link != blank -%}
-            </a>
-          {%- endif -%}
+      {%- if section.blocks.first.settings.text != blank -%}
+        {%- if section.blocks.first.settings.link != blank -%}
+          <a
+            href="{{ section.blocks.first.settings.link }}"
+            class="announcement-bar__link link link--text focus-inset animate-arrow"
+          >
+            <p class="announcement-bar__message h5">
+              <span>{{ section.blocks.first.settings.text | escape }}</span>
+            </p>
+          </a>
         {%- endif -%}
+        {%- if section.blocks.first.settings.link != blank -%}
+          <div class="announcement-bar__discount-code-wrapper">
+            <span class="announcement-bar__discount-code h5">{{ section.blocks.first.settings.discount_code | escape }}</span>
+            {{- 'icon-copy.svg' | inline_asset_content -}}
+          </div>
+        {%- endif -%}
+      {%- endif -%}
       </div>
     {%- elsif section.blocks.size > 1 -%}
       <slideshow-component
@@ -98,15 +117,16 @@
                         href="{{ block.settings.link }}"
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
-                    {%- endif -%}
-                    <p class="announcement-bar__message h5">
-                      <span>{{ block.settings.text | escape }}</span>
-                      {%- if block.settings.link != blank -%}
-                        {{- 'icon-arrow.svg' | inline_asset_content -}}
-                      {%- endif -%}
-                    </p>
-                    {%- if block.settings.link != blank -%}
+                        <p class="announcement-bar__message h5">
+                          <span>{{ block.settings.text | escape }}</span>
+                        </p>
                       </a>
+                    {%- endif -%}
+                    {%- if block.settings.link != blank -%}
+                      <div class="announcement-bar__discount-code-wrapper">
+                        <span class="announcement-bar__discount-code h5">{{ block.settings.discount_code | escape }}</span>
+                        {{- 'icon-copy.svg' | inline_asset_content -}}
+                      </div>
                     {%- endif -%}
                   {%- endif -%}
                 </div>
@@ -171,6 +191,12 @@
     "groups": ["header"]
   },
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "sticky_announcement_bar",
+      "label": "Sticky announcement bar",
+      "default": true
+    },
     {
       "type": "checkbox",
       "id": "auto_rotate",
@@ -244,6 +270,11 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        },
+        {
+          "type": "text",
+          "id": "discount_code",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.discount_code.label"
         }
       ]
     }

@@ -1,75 +1,384 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slideshow_g7GDdp": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide_AQpjJH": {
+          "type": "slide",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "desktop_image": "shopify://shop_images/Banner_2_desk.png",
+            "mobile_image": "shopify://shop_images/Banner_2_image.png",
+            "image_overlay_opacity": 0,
+            "heading": "Valentine's day SALE",
+            "heading_size": "hxl",
+            "subheading": "Get Ready for LOVE",
+            "button_label": "SHOP NOW",
+            "link": "shopify://collections/couple-hoodies",
+            "button_style_secondary": true,
+            "show_text_box": false,
+            "box_align": "middle-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-5"
           }
         },
-        "button": {
-          "type": "buttons",
+        "slide_iX8bMm": {
+          "type": "slide",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "desktop_image": "shopify://shop_images/Banner_1_desk.png",
+            "mobile_image": "shopify://shop_images/Banner_1_mob.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "slide_AQpjJH",
+        "slide_iX8bMm"
       ],
+      "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "show_arrows": false,
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
         "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
+        "collection": "couple-hoodies",
+        "products_to_show": 6,
+        "title": "Made To Match",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-3",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
-        "padding_top": 44,
+        "swipe_on_mobile": true,
+        "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "collage_RyEQrX": {
+      "type": "collage",
+      "blocks": {
+        "image_RwR36F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_d3vhapd3vhapd3vh_ff6eb202-713b-4f59-a593-1b470fc54956.png"
+          }
+        },
+        "product_6TW4P3": {
+          "type": "product",
+          "settings": {
+            "product": "heartstring-treasure-box",
+            "second_image": true
+          }
+        },
+        "product_MjkbXE": {
+          "type": "product",
+          "settings": {
+            "product": "blush-bloom-gift-box",
+            "second_image": true
+          }
+        }
+      },
+      "block_order": [
+        "image_RwR36F",
+        "product_6TW4P3",
+        "product_MjkbXE"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "Gift Box",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "none",
+        "color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "usp_strip_PjiHpx": {
+      "type": "usp-strip",
+      "blocks": {
+        "usp_gpkLHR": {
+          "type": "usp",
+          "settings": {
+            "icon": "shopify://shop_images/fabric_39e5ac39-2c67-4dab-9c0a-638453b87424.png",
+            "text": "Premium Fabric Feel"
+          }
+        },
+        "usp_6AbGf3": {
+          "type": "usp",
+          "settings": {
+            "icon": "shopify://shop_images/fit_df3033e0-c987-46aa-99bb-3c7d027826bf.png",
+            "text": "Perfect Fit, Every Time"
+          }
+        },
+        "usp_PywWmF": {
+          "type": "usp",
+          "settings": {
+            "icon": "shopify://shop_images/return_5de32d81-b807-492d-abdf-852730503381.png",
+            "text": "Easy 7-Day Returns"
+          }
+        }
+      },
+      "block_order": [
+        "usp_gpkLHR",
+        "usp_6AbGf3",
+        "usp_PywWmF"
+      ],
+      "name": "USP Strip",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "title": "Built for Comfort & Confidence",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "columns_mobile": 1,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "featured_collection_AJ9ghN": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "anime",
+        "products_to_show": 6,
+        "title": "Anime Collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-3",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_LhaAb7": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_7d9LEd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "couple-hoodies"
+          }
+        },
+        "featured_collection_t99Jhb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gift-hampers"
+          }
+        },
+        "featured_collection_6xbDMF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "oversized"
+          }
+        },
+        "featured_collection_ttgGxT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-hoodies"
+          }
+        },
+        "featured_collection_7RQtqz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_7d9LEd",
+        "featured_collection_t99Jhb",
+        "featured_collection_6xbDMF",
+        "featured_collection_ttgGxT",
+        "featured_collection_7RQtqz"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Explore All Collections",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 5,
+        "color_scheme": "scheme-3",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_pqmWn7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_4qeixz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What size should I choose?",
+            "icon": "none",
+            "row_content": "<p>Our hoodies are designed for a comfortable, true-to-size fit. If you prefer a relaxed or oversized look, we recommend sizing up. You can also refer to the size chart available on each product page.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8qCtHM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What fabric are the hoodies made from?",
+            "icon": "none",
+            "row_content": "<p>Our hoodies are crafted using premium-quality fabric that’s soft, durable, and breathable—perfect for everyday wear while maintaining shape and comfort over time.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HCpyjJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the return or exchange policy?",
+            "icon": "none",
+            "row_content": "<p>We offer easy 7-day returns or exchanges on unused items with original tags intact. Simply reach out to our support team to initiate the process.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8V78Tr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does delivery take?",
+            "icon": "none",
+            "row_content": "<p>Orders are usually processed within 24–48 hours and delivered across India within 3–7 business days, depending on your location.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_4qeixz",
+        "collapsible_row_8qCtHM",
+        "collapsible_row_HCpyjJ",
+        "collapsible_row_8V78Tr"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "FAQs",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1768908721c1580022": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_testimonials_carousel_dUYGqz": {
+          "type": "shopify://apps/judge-me-reviews/blocks/testimonials_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "product_reviews",
+            "products": [
+              "2-pack-mcqueen-sally-back-print-only-unisex-couple-oversized-t-shirts-black-white",
+              "blush-bloom-gift-box",
+              "crocodile-one-piece-unisex-black-white-oversized-t-shirt",
+              "kaidou-king-of-beasts-one-piece-unisex-oversized-t-shirt-1"
+            ],
+            "star_rating": "all",
+            "max_reviews": 20,
+            "quote_marks_size": "hidden",
+            "product_name_text_size": "small",
+            "verified_badge_style": "icon",
+            "card_height": "compact",
+            "text_size": "small",
+            "stars_size": "small",
+            "arrows_position": "hidden",
+            "max_width": 1400,
+            "corner_styling": "square",
+            "quote_marks_style": "serif",
+            "card_color": "#f9f9f9",
+            "stars_and_quote_marks_color": "#ffb3c1",
+            "text_color": "#590d22",
+            "arrows_color": "#590d22",
+            "show_border": false,
+            "border_color": "#108474",
+            "show_drop_shadow": false,
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_testimonials_carousel_dUYGqz"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "slideshow_g7GDdp",
+    "featured_collection",
+    "collage_RyEQrX",
+    "usp_strip_PjiHpx",
+    "featured_collection_AJ9ghN",
+    "collection_list_LhaAb7",
+    "collapsible_content_pqmWn7",
+    "1768908721c1580022"
   ]
 }
