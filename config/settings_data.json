@@ -12,14 +12,14 @@
     "logo": "shopify://shop_images/urbanlogo.webp",
     "logo_width": 110,
     "favicon": "shopify://shop_images/urbanlogo.webp",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "sour_gummy_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "libre_baskerville_n4",
     "body_scale": 100,
     "page_width": 1400,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 8,
-    "spacing_grid_vertical": 8,
+    "spacing_grid_horizontal": 24,
+    "spacing_grid_vertical": 24,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "none",
     "buttons_border_thickness": 1,
@@ -46,7 +46,7 @@
     "card_style": "standard",
     "card_image_padding": 0,
     "card_text_alignment": "left",
-    "card_color_scheme": "scheme-2",
+    "card_color_scheme": "scheme-3",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
     "card_corner_radius": 0,
@@ -103,9 +103,9 @@
     "drawer_shadow_horizontal_offset": 0,
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
-    "badge_position": "bottom left",
+    "badge_position": "top right",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "scheme-4",
+    "sale_badge_color_scheme": "scheme-1",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
     "brand_description": "<p></p>",
@@ -143,6 +143,13 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -168,13 +175,13 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#242833",
+          "background": "#fff0f3",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#121212",
-          "button_label": "#000000",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#590d22",
+          "button": "#ffb3c1",
+          "button_label": "#fff0f3",
+          "secondary_button_label": "#ffb3c1",
+          "shadow": "#ffb3c1"
         }
       },
       "scheme-4": {
