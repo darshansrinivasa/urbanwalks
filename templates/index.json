@@ -81,7 +81,7 @@
         "columns_desktop": 4,
         "enable_desktop_slider": true,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "color_scheme": "scheme-3",
         "image_ratio": "adapt",
@@ -239,6 +239,12 @@
           "settings": {
             "collection": "t-shirts"
           }
+        },
+        "featured_collection_QGxr8Y": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "anime"
+          }
         }
       },
       "block_order": [
@@ -246,14 +252,15 @@
         "featured_collection_t99Jhb",
         "featured_collection_6xbDMF",
         "featured_collection_ttgGxT",
-        "featured_collection_7RQtqz"
+        "featured_collection_7RQtqz",
+        "featured_collection_QGxr8Y"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Explore All Collections",
         "heading_size": "h1",
         "image_ratio": "portrait",
-        "columns_desktop": 5,
+        "columns_desktop": 6,
         "color_scheme": "scheme-3",
         "show_view_all": true,
         "columns_mobile": "2",

@@ -35,13 +35,18 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+
+    #collection-{{ section.id }} .slider-buttons {
+      position: absolute;
+      top: -80px;
+      right: 20px;
+    }
   }
 
   #collection-{{ section.id }} .slider-buttons {
-    position: absolute;
-    top: -80px;
-    right: 20px;
+    display: none !important;
   }
+
   #collection-{{ section.id }} .slider-button .icon {
     height: 1.2rem;
   }
@@ -105,7 +110,7 @@
       {%- endif -%}
     </div>
 
-    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} page-width page-width-desktop {% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
         data-id="{{ section.id }}"
