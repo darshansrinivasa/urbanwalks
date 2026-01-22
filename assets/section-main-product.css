@@ -969,6 +969,7 @@ a.product__text {
 
   .thumbnail-slider .thumbnail-list.slider {
     display: flex;
+    justify-content: center;
     padding: 0.5rem;
     flex: 1;
     scroll-padding-left: 0.5rem;
@@ -991,6 +992,7 @@ a.product__text {
 
   .thumbnail-slider .thumbnail-list.slider--tablet-up {
     display: flex;
+    justify-content: center;
     padding: 0.5rem;
     flex: 1;
     scroll-padding-left: 0.5rem;

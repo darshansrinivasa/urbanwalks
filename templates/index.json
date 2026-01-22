@@ -12,25 +12,6 @@
     "slideshow_g7GDdp": {
       "type": "slideshow",
       "blocks": {
-        "slide_AQpjJH": {
-          "type": "slide",
-          "settings": {
-            "desktop_image": "shopify://shop_images/Banner_2_desk.png",
-            "mobile_image": "shopify://shop_images/Banner_2_image.png",
-            "image_overlay_opacity": 0,
-            "heading": "Valentine's day SALE",
-            "heading_size": "hxl",
-            "subheading": "Get Ready for LOVE",
-            "button_label": "SHOP NOW",
-            "link": "shopify://collections/couple-hoodies",
-            "button_style_secondary": true,
-            "show_text_box": false,
-            "box_align": "middle-right",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-5"
-          }
-        },
         "slide_iX8bMm": {
           "type": "slide",
           "settings": {
@@ -49,11 +30,30 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
+        },
+        "slide_AQpjJH": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Banner_2_desk.png",
+            "mobile_image": "shopify://shop_images/Banner_2_image.png",
+            "image_overlay_opacity": 0,
+            "heading": "Valentine's day SALE",
+            "heading_size": "hxl",
+            "subheading": "Get Ready for LOVE",
+            "button_label": "SHOP NOW",
+            "link": "shopify://collections/couple-hoodies",
+            "button_style_secondary": true,
+            "show_text_box": false,
+            "box_align": "middle-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-5"
+          }
         }
       },
       "block_order": [
-        "slide_AQpjJH",
-        "slide_iX8bMm"
+        "slide_iX8bMm",
+        "slide_AQpjJH"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {

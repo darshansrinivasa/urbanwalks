@@ -3596,3 +3596,13 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+@media (hover: hover) and (pointer: fine) {
+  header details[open] > summary::after {
+    display: none;
+  }
+
+  header details:hover {
+    cursor: pointer;
+  }
+}
