@@ -1269,7 +1269,7 @@ input.mobile-facets__checkbox {
 .horizontal-sticky-bar .facets-wrapper {
   position: sticky;
   top: 125px;
-  z-index: 10;
+  z-index: 1;
   background-color: var(--gradient-background);
 }
 
@@ -1281,7 +1281,7 @@ input.mobile-facets__checkbox {
   .vertical-sticky-bar .facets-container {
     position: sticky;
     top: 150px;
-    z-index: 10;
+    z-index: 1;
     background-color: var(--gradient-background);
   }
 }
@@ -1294,7 +1294,7 @@ input.mobile-facets__checkbox {
 
   .vertical-sticky-bar .facets-wrapper {
     position: sticky;
-    z-index: 10;
+    z-index: 1;
     background-color: var(--gradient-background);
   }
 }

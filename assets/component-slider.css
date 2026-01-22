@@ -133,9 +133,6 @@ slider-component.slider-component-full-width {
 }
 
 @media screen and (min-width: 990px) {
-  .slider-component-desktop.page-width {
-    max-width: none;
-  }
 
   .slider--desktop {
     position: relative;
@@ -160,20 +157,6 @@ slider-component.slider-component-full-width {
     margin-bottom: 0;
     padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
     padding-bottom: max(var(--focus-outline-padding), var(--shadow-padding-bottom));
-  }
-
-  .slider--desktop .slider__slide:first-child {
-    margin-left: var(--desktop-margin-left-first-item);
-    scroll-margin-left: var(--desktop-margin-left-first-item);
-  }
-
-  .slider-component-full-width .slider--desktop {
-    scroll-padding-left: 1.5rem;
-  }
-
-  .slider-component-full-width .slider--desktop .slider__slide:first-child {
-    margin-left: 1.5rem;
-    scroll-margin-left: 1.5rem;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
