@@ -78,6 +78,7 @@ variant-selects {
 .product-form__input--pill input[type='radio'] + label.has_variant_image {
   padding: 0;
   overflow: hidden;
+  display: inline-flex;
 }
 
 .product-form__input--pill input[type='radio'] + label.has_variant_image img {
@@ -132,6 +133,8 @@ variant-selects {
   border-color: rgba(var(--color-foreground), 0.1);
   color: rgba(var(--color-foreground), 0.6);
   text-decoration: line-through;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 .product-form__input--pill input[type='radio'].disabled:checked + label,
