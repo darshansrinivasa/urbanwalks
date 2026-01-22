@@ -12,10 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "judge_me_reviews_preview_badge_eGfKBY": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -24,11 +20,15 @@
           "type": "price",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_eGfKBY": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "square"
           }
         },
         "quantity_selector": {
@@ -38,8 +38,8 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
         "description": {
@@ -54,9 +54,9 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_preview_badge_eGfKBY",
         "title",
         "price",
+        "judge_me_reviews_preview_badge_eGfKBY",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -65,16 +65,16 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": true,
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "padding_top": 36,
         "padding_bottom": 12
       }
@@ -87,7 +87,7 @@
         "products_to_show": 4,
         "columns_desktop": 4,
         "columns_mobile": "2",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -113,6 +113,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_F4Y6Je"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }

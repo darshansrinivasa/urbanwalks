@@ -20,7 +20,24 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 
+{% assign option_name_downcase = option.name | downcase %}
+{% assign is_color_option = false %}
+{% if option_name_downcase contains 'color' or option_name_downcase contains 'colour' %}
+  {% assign is_color_option = true %}
+{% endif %}
+
 {%- for value in option.values -%}
+  {% assign variant_image = nil %}
+
+  {% for variant in product.variants %}
+    {% if variant.options contains value %}
+      {% if variant.featured_image %}
+        {% assign variant_image = variant.featured_image %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
   {%- liquid
     assign swatch_focal_point = null
     if value.swatch.image
@@ -94,9 +111,17 @@
       {% endif %}
       {{ input_dataset }}
     >
-    <label for="{{ input_id }}">
-      {{ value -}}
-      {{ label_unavailable }}
+    <label for="{{ input_id }}" {% if is_color_option %} class="has_variant_image" {% endif %}>
+      {% if is_color_option %}
+      <img 
+        src="{{ variant_image | image_url: width: 80 }}"
+        alt="{{ value | escape }}"
+        loading="lazy"
+      >
+    {% else %}
+      {{ value }}
+    {% endif %}
+    {{ label_unavailable }}
     </label>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
